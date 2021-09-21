@@ -30,7 +30,7 @@ const App = (props) => {
             <Route path="/newQuestion" exact component={NewQuestion} />
             <Route path="/leaderboard" exact component={LeaderBoard} />
 
-            <Route path="/question/:id" exact component={QuestionPage} />
+            <Route path="/questions/:id" exact component={QuestionPage} />
             <Route path="/" exact component={LoginPage} />
             <Route component={NotFound} />
           </Switch>

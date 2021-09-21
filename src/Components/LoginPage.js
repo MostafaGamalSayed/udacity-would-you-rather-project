@@ -28,7 +28,11 @@ const LoginPage = (props) => {
     <div className="wrapper">
       <form className="login" onSubmit={handleSubmit}>
         <p className="title">Log in</p>
-        <input type="text" placeholder="Username" onChange={handleChange} />
+        <select placeholder="select user" onChange={handleChange}>
+          {props.usersIds.map(user => (
+            <option value={user}>{user}</option>
+          ))}
+        </select>
         <button type="submit" disabled={text === ""}>
           <span>Log in</span>
         </button>
