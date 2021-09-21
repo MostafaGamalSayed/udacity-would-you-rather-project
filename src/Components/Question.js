@@ -21,7 +21,7 @@ class Question extends Component {
             <span>{author}</span>
             <div>{formatDate(timestamp)}</div>
             <p>Would you rather?</p>
-            <Link to={`/question/${id}`}>View Poll</Link>
+            <Link to={`/questions/${id}`}>View Poll</Link>
           </div>
         </div>
       </div>
