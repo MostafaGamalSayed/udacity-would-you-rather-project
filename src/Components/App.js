@@ -10,7 +10,7 @@ import NewQuestion from "./NewQuestion";
 import LeaderBoard from "./LeaderBoard";
 import NotFound from "./NotFound";
 
-const App = (props) => {
+const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,9 +21,6 @@ const App = (props) => {
     <Router>
       <Fragment>
         <div className="container">
-          {
-            //<Route path="/" exact component={LoginPage} />
-          }
           <Nav />
           <Switch>
             <Route path="/homepage" exact component={HomePage} />
